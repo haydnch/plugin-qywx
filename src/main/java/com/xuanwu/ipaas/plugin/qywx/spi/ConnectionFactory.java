@@ -1,6 +1,5 @@
 package com.xuanwu.ipaas.plugin.qywx.spi;
 
-import com.xuanwu.ipaas.plugin.qywx.utils.AccountConstants;
 import com.xuanwu.ipaas.plugin.sdk._enum.ConnectType;
 import com.xuanwu.ipaas.plugin.sdk._enum.PluginErrorCode;
 import com.xuanwu.ipaas.plugin.sdk.domain.Connection;
@@ -49,6 +48,7 @@ public class ConnectionFactory implements ConnectSPI {
             final Properties props = new Properties();
             props.put("mail.smtp.auth", "true");
             //props.put("mail.smtp.host", "smtp.163.com");
+            //smtp.exmail.qq.com
             props.put("mail.smtp.host", host);
             props.put("mail.smtp.port", "465");
             props.put("mail.transport.protocol", "smtp");

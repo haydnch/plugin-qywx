@@ -8,7 +8,7 @@
       "resourcetype": "1",
       "accounttype": "",
       "uri": "com.xuanwu.ipaas.plugin.qywx.spi.SendEmailAction",
-      "descr": "根据输入信息发送邮件",
+      "descr": "根据输入信息发送邮件到指定地址",
       "config": {
         "input": {
           "properties": [
