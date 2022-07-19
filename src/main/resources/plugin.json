@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "versionnote": "初始版本",
+  "action": [
+    {
+      "resourcename": "发送邮件",
+      "resourcekey": "send-email",
+      "resourcetype": "1",
+      "accounttype": "",
+      "uri": "com.xuanwu.ipaas.plugin.qywx.spi.SendEmailAction",
+      "descr": "根据输入信息发送邮件",
+      "config": {
+        "input": {
+          "properties": [
+            {
+              "key": "toAddress",
+              "title": "收件地址",
+              "type": "textinput",
+              "datatype": "String",
+              "required": "true"
+            },
+            {
+              "key": "title",
+              "title": "邮件标题",
+              "type": "textinput",
+              "datatype": "String",
+              "required": "true"
+            },
+            {
+              "key": "text",
+              "title": "邮件正文",
+              "type": "textinput",
+              "datatype": "String",
+              "required": "true"
+            }
+          ]
+        },
+        "output": {
+          "properties": [
+            {
+              "key": "status",
+              "title": "返回状态",
+              "datatype": "Integer",
+              "type": "",
+              "defaultvalue": "",
+              "required": "",
+              "helptxt": ""
+            },
+            {
+              "key": "data",
+              "title": "返回信息",
+              "datatype": "Map",
+              "type": "",
+              "defaultvalue": "",
+              "required": "",
+              "helptxt": "",
+              "properties": [
+                {
+                  "key": "response",
+                  "title": "响应",
+                  "datatype": "String",
+                  "type": "",
+                  "required": "",
+                  "helptxt": ""
+                }
+              ]
+            },
+            {
+              "key": "error",
+              "title": "错误输出",
+              "datatype": "Map",
+              "type": "",
+              "defaultvalue": "",
+              "required": "",
+              "helptxt": "",
+              "properties": [
+                {
+                  "key": "errorcode",
+                  "title": "错误编码",
+                  "datatype": "String",
+                  "type": "",
+                  "required": "",
+                  "helptxt": ""
+                },
+                {
+                  "key": "errormsg",
+                  "title": "错误信息",
+                  "datatype": "String",
+                  "type": "",
+                  "required": "",
+                  "helptxt": ""
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
